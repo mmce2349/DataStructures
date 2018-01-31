@@ -10,5 +10,21 @@
 #define FileController_hpp
 
 #include <stdio.h>
-
+#include "CrimeData.hpp"
+#include <string>
+#include <fstream>
+#include <iostream>
+#include <vector>
+#include <sstream>
+using namespace std;
+class fileController
+{
+private:
+    
+protected:
+    
+public:
+    static vector<CrimeData> readCrimeDataToVector(string filename);
+    
+};
 #endif /* FileController_hpp */

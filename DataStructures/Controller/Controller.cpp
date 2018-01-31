@@ -7,9 +7,25 @@
 //
 
 #include "Controller.hpp"
+using namespace std;
 
 void Controller :: start()
 {
+    cout << "Testing the Timer class "<< endl;
+    Timer codeTimer;
+    codeTimer.startTimer();
+    cout << "Print to the Screen some text" << endl;
+    codeTimer.stopTimer();
+    codeTimer.displayInformation();
     
+    codeTimer.resetTimer();
+    codeTimer.startTimer();
+    for (int index=0; index < 100; index++)
+    {
+        cout << "The index is " << index << "\t";
+        
+    }
+    codeTimer.stopTimer();
+    codeTimer.displayInformation();
     
 }
