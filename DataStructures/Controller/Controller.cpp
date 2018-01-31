@@ -19,5 +19,7 @@ void Controller :: start()
     {
         cout << "Spot # " << loop << ": " << myData[loop] << endl;
     }
+    codeTimer.stopTimer();
+    codeTimer.displayInformation();
     
 }
