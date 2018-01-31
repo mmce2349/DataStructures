@@ -6,7 +6,7 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#include "Controller/Controller.hpp"
+#include "Controller.hpp"
 int main()
 {
     Controller app;
