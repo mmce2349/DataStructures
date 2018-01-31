@@ -60,11 +60,19 @@
 		0B2C2A2120220B88006F7468 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				0B2C2A2920220B9C006F7468 /* Controller.cpp */,
-				0B2C2A2A20220B9C006F7468 /* Controller.hpp */,
-				0B2C2A2C20220BA7006F7468 /* Runner.cpp */,
+				0B2C2A2E20220BDC006F7468 /* Controller */,
 			);
 			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		0B2C2A2E20220BDC006F7468 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B2C2A2A20220B9C006F7468 /* Controller.hpp */,
+				0B2C2A2920220B9C006F7468 /* Controller.cpp */,
+				0B2C2A2C20220BA7006F7468 /* Runner.cpp */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
