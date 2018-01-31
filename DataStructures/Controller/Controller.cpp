@@ -7,3 +7,9 @@
 //
 
 #include "Controller.hpp"
+
+void Controller :: start()
+{
+    
+    
+}
