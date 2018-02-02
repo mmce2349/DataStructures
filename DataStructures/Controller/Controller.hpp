@@ -13,7 +13,7 @@
 #include <vector>
 #include <iostream>
 #include "FileController.hpp"
-
+#include "Array.hpp"
 class Controller
 {
 private:
