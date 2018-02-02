@@ -11,17 +11,7 @@ using namespace std;
 
 void Controller :: start()
 {
-    cout << "Testing the Timer class "<< endl;
-    Timer codeTimer;
-    codeTimer.startTimer();
-    vector<CrimeData> myData = fileController:: readCrimeDataToVector("/Users/mmce2349/Documents/Data Structures 2018/DataStructures/DataStructures/Data/crime.csv");
-    for (int loop = 0; loop< 30; loop++)
-    {
-        cout << "Spot # " << loop << ": " << myData[loop] << endl;
-    }
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    
+    findMaxandMin();
 }
 
 void Controller :: findMaxandMin()
