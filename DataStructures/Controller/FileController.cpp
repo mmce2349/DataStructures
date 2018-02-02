@@ -20,7 +20,7 @@ vector<CrimeData> fileController :: readCrimeDataToVector(string filename)
     {
             while(!dataFile.eof())
             {
-                getline(dataFile, currentCSVLine, '\r');
+                getline(dataFile, currentCSVLine, '\n');
                 if (rowCount !=0)
                 {
                     CrimeData row(currentCSVLine);
