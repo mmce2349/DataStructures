@@ -75,5 +75,32 @@ template <class Type>
             
         }
         return *this;
+        
+    template <class Type>
+        Type & Array<Type> :: operator [] (int index)
+        {
+            asser(index >= 0 && index < size);
+            return internalArray[index];
+        }
+    template <class Type>
+        Type Array <Type> :: operator [] (int index) const
+        {
+            asser(index >= 0 && index < size);
+            return internalArray[index];
+        }
+        
+    template <class Type>
+        int Array<Type> :: getSize90 const
+        {
+            return size;
+        }
+    template <class Type>
+        Type Array<Type> :: getFromIndex(int index)
+        {
+            assert (index >= 0 && index < size);
+            
+            Type value = internalArray[index];
+            return value; 
+        }
 }
 #endif /* Array_hpp */
