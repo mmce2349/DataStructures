@@ -23,3 +23,26 @@ void Controller :: start()
     codeTimer.displayInformation();
     
 }
+
+void Controller :: findMaxandMin()
+{
+      vector<CrimeData> myData = fileController:: readCrimeDataToVector("/Users/mmce2349/Documents/Data Structures 2018/DataStructures/DataStructures/Data/crime.csv");
+    
+    int minIndex =0;
+    int maxIndex = 0;
+    
+    for( int index = 1; index< myData.size(); index++)
+    {
+        if ( myData [minIndex] < myData [index])
+        {
+            minIndex = index;
+        }
+        
+        if (myData [maxIndex] > myData [index] )
+        {
+            maxIndex = index;
+        }
+            
+    }
+    
+}
