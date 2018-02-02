@@ -23,8 +23,6 @@ vector<CrimeData> fileController :: readCrimeDataToVector(string filename)
                 getline(dataFile, currentCSVLine, '\n');
                 if (rowCount !=0)
                 {
-                    CrimeData row(currentCSVLine);
-                    crimeVector.push_back(row);
                     
                         if (currentCSVLine.length() != 0)
                         {
