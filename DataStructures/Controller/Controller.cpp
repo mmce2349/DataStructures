@@ -7,12 +7,12 @@
 //
 
 #include "Controller.hpp"
-using namespace std;
+
 
 void Controller :: start()
 {
     ArrayTester myTest;
-    myTest.testArrayUse();
+    myTest.testArrayuse();
     myTest.testAdvancedArray();
     findMaxandMin();
 }

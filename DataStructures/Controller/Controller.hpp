@@ -14,7 +14,7 @@
 #include <iostream>
 #include "FileController.hpp"
 #include "../Testers/ArrayTester.hpp"
-
+using namespace std;
 class Controller
 {
 private:
