@@ -12,7 +12,7 @@
 void Controller :: start()
 {
     ArrayTester myTest;
-    myTest.testArrayuse();
+    myTest.testArrayUse();
     myTest.testAdvancedArray();
     findMaxandMin();
 }
