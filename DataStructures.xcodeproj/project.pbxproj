@@ -41,6 +41,7 @@
 		0B2C2A5C20222258006F7468 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
 		0B503BDD202A001700FAF71C /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		0B503BDE202A001700FAF71C /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
+		0B503BE3202A10BC00FAF71C /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		0B554D6D2024BF6F004387FF /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,9 +124,18 @@
 			path = Testers;
 			sourceTree = "<group>";
 		};
+		0B503BE1202A107C00FAF71C /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				0B503BE3202A10BC00FAF71C /* Node.hpp */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
 		0B554D6A2024BF35004387FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0B503BE1202A107C00FAF71C /* Nodes */,
 				0B554D6B2024BF3C004387FF /* Structures */,
 			);
 			path = Model;
