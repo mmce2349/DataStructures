@@ -9,6 +9,7 @@
 #ifndef ArrayTester_hpp
 #define ArrayTester_hpp
 
-#include <stdio.h>
+#include <iostream>
+#include "../Model/Structures/Array.hpp"
 
 #endif /* ArrayTester_hpp */
