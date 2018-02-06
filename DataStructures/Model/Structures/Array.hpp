@@ -65,7 +65,7 @@ template <class Type>
     {
         if(&toAssign != this)
         {
-            delete [] internalArray;
+            delete [] internalArray; //use this to clear out new objects.
             size = toAssign.getSize90;
             internalArray = new Type [size];
         }
