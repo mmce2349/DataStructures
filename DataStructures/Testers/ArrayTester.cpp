@@ -29,6 +29,13 @@ void ArrayTester :: testArrayUse()
     Array<int> thirdArray(secondArray);
     
     cout << thirdArray.getSize() << endl;
+    firstArray = thirdArray;
+    cout << firstArray[4] << endl;
+    
+    thirdArray[5] = 123;
+    cout << thirdArray [5] << endl;
+    
+    
 }
 
 void ArrayTester :: testAdvancedArray()
