@@ -90,7 +90,7 @@ template <class Type>
         }
         
     template <class Type>
-        int Array<Type> :: getSize90 const
+        int Array<Type> :: getSize() const
         {
             return size;
         }
