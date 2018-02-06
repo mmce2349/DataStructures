@@ -13,6 +13,7 @@
 #include <vector>
 #include <iostream>
 #include "FileController.hpp"
+#include "../Testers/ArrayTester.hpp"
 
 class Controller
 {

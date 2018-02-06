@@ -10,7 +10,7 @@
 #define Array_hpp
 #include <assert.h>
 #include <iostream>
-#include <stdio.h>
+
 using namespace std;
 
 template <class Type>
@@ -108,5 +108,5 @@ template <class Type>
             assert(pos >= 0 && pos <size);
             internalArray [pos] = item;
         }
-}
+    }
 #endif /* Array_hpp */
