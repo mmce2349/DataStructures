@@ -20,6 +20,15 @@ void ArrayTester :: testArrayUse()
     {
         cout << firstArray[index] << endl;
     }
+    
+    Array<int> secondArray(400);
+    
+    cout << secondArray.getSize() << endl;
+    cout << firstArray.getSize() << endl;
+    
+    Array<int> thirdArray(secondArray);
+    
+    cout << thirdArray.getSize() << endl;
 }
 
 void ArrayTester :: testAdvancedArray()
