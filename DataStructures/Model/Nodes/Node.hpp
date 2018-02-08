@@ -29,7 +29,7 @@ Node<Type> :: Node()
 }
 
 template <class Type>
-Node<Type :: Node(Type data)
+Node<Type> :: Node(Type data)
 {
     
     this->data = data;
