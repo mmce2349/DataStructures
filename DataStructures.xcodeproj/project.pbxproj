@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B08D6DE20348797003FBA8E /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B08D6DC20348797003FBA8E /* List.cpp */; };
 		0B2C2A3120220CED006F7468 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A2F20220CED006F7468 /* Controller.cpp */; };
 		0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A3220220CF9006F7468 /* Runner.cpp */; };
 		0B2C2A3620220DC3006F7468 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A3420220DC3006F7468 /* FileController.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B08D6DC20348797003FBA8E /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		0B08D6DD20348797003FBA8E /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		0B2C2A1F20220B88006F7468 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2C2A2F20220CED006F7468 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		0B2C2A3020220CED006F7468 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -58,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B08D6DB20348779003FBA8E /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				0B08D6DC20348797003FBA8E /* List.cpp */,
+				0B08D6DD20348797003FBA8E /* List.hpp */,
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
 		0B2C2A1620220B88006F7468 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		0B554D6B2024BF3C004387FF /* Structures */ = {
 			isa = PBXGroup;
 			children = (
+				0B08D6DB20348779003FBA8E /* Linear */,
 				0B554D6D2024BF6F004387FF /* Array.hpp */,
 				0BA91611202CB5860001F3A6 /* ListAbstractBase.hpp */,
 			);
@@ -210,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B08D6DE20348797003FBA8E /* List.cpp in Sources */,
 				0B2C2A3120220CED006F7468 /* Controller.cpp in Sources */,
 				0B2C2A5D20222258006F7468 /* CrimeData.cpp in Sources */,
 				0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */,
