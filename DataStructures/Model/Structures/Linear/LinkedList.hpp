@@ -15,7 +15,7 @@
 using namespace std;
 
 template<class Type>
-class LinkedList: public List<Type>
+class LinkedList: public ListAbstractBase<Type>
 {
 protected:
     LinearNode<Type> * front;
