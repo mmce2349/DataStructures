@@ -1,13 +1,14 @@
 //
-//  List.hpp
+//  LinkedList.hpp
 //  DataStructures
 //
-//  Created by Mcentire, Mitchell on 2/14/18.
+//  Created by Mcentire, Mitchell on 2/20/18.
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#ifndef List_hpp
-#define List_hpp
+#ifndef LinkedList_hpp
+#define LinkedList_hpp
+#include "ListAbstractBase.hpp"
 using namespace std;
 
 template<class Type>
@@ -153,4 +154,4 @@ int LinkedList<Type> :: getSize() const
 }
 #include <stdio.h>
 
-#endif /* List_hpp */
+#endif /* LinkedList_hpp */
