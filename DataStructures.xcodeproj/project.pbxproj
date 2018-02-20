@@ -63,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				0B7E9211203C6FCA00AC026B /* LinkedList.hpp */,
+				0BA91611202CB5860001F3A6 /* ListAbstractBase.hpp */,
+				0B554D6D2024BF6F004387FF /* Array.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
@@ -157,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				0B08D6DB20348779003FBA8E /* Linear */,
-				0B554D6D2024BF6F004387FF /* Array.hpp */,
-				0BA91611202CB5860001F3A6 /* ListAbstractBase.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
