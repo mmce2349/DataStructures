@@ -45,5 +45,14 @@ void LinkedListTester :: testListWithData()
     
     listTimer.startTimer();
     LinkedList<CrimeData> crimes = FileController :: readDataToList("/Users/mmce2349/Documents/Data Structures 2018/DataStructures/DataStructures/Data/crime.csv");
+    listTimer.stopTimer();
+    cout << "This is how long it took to read the structure into our custom data structure" <<endl;
+    listTimer.displayInformation();
     
+    listTimer.resetTimer();
+    cout<< "This is how long it takes to access a random data value" <<endl;
+    listTimer.startTimer();
+    int randomLocation = (rand() * rand()) % crimes.getSize();
+    cout << "the Random index is " << randomLocation << endl;
+    double 
 }
