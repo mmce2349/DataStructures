@@ -9,7 +9,7 @@
 #ifndef LinkedList_hpp
 #define LinkedList_hpp
 #include "ListAbstractBase.hpp"
-#include "LinearNode.hpp"
+#include "../../Nodes/LinearNode.hpp"
 #include <iostream>
 #include <assert.h>
 using namespace std;

@@ -54,5 +54,9 @@ void LinkedListTester :: testListWithData()
     listTimer.startTimer();
     int randomLocation = (rand() * rand()) % crimes.getSize();
     cout << "the Random index is " << randomLocation << endl;
-    double 
+    double totalViolentRate = crimes.getFromIndex(randomLocation).getAllViolentRates();
+    listTimer.stopTimer();
+    cout<< "the random crime stat is: "<< totalViolentRate << " , and here is the time" <<endl;
+    listTimer.displayInformation();
+    
 }
