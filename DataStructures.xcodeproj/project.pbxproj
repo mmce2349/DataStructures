@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B1E699E203F1449002E72EE /* Queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E699C203F1449002E72EE /* Queue.cpp */; };
 		0B1E69A4203F1464002E72EE /* CircularList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E69A2203F1464002E72EE /* CircularList.cpp */; };
 		0B1E69A7203F1CFE002E72EE /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E69A5203F1CFE002E72EE /* LinkedListTester.cpp */; };
 		0B2C2A3120220CED006F7468 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A2F20220CED006F7468 /* Controller.cpp */; };
@@ -31,7 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B1E699C203F1449002E72EE /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		0B1E699D203F1449002E72EE /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		0B1E69A0203F1457002E72EE /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 		0B1E69A2203F1464002E72EE /* CircularList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircularList.cpp; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				0B7E9211203C6FCA00AC026B /* LinkedList.hpp */,
 				0BA91611202CB5860001F3A6 /* ListAbstractBase.hpp */,
 				0B554D6D2024BF6F004387FF /* Array.hpp */,
-				0B1E699C203F1449002E72EE /* Queue.cpp */,
 				0B1E699D203F1449002E72EE /* Queue.hpp */,
 				0B1E69A0203F1457002E72EE /* Stack.hpp */,
 				0B1E69A2203F1464002E72EE /* CircularList.cpp */,
@@ -237,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B1E699E203F1449002E72EE /* Queue.cpp in Sources */,
 				0B2C2A3120220CED006F7468 /* Controller.cpp in Sources */,
 				0B2C2A5D20222258006F7468 /* CrimeData.cpp in Sources */,
 				0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */,
