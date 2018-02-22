@@ -33,14 +33,14 @@ public:
     virtual Type remove(int index);
     
 };
-
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
     this->end = nullptr;
     this->size = 0;
 }
-
+template <class Type>
 LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
@@ -51,24 +51,26 @@ LinkedList<Type> :: ~LinkedList()
         destroyStructure = front;
     }
 }
+template <class Type>
 void LinkedList<Type> :: add(Type item)
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
     
     if(this->size == 0)
     {
-        this->front = new Data;
+        this->front = newData;
     }
     else
     {
         this->end->setNextNode(newData);
     }
     
-    this->end = newData:
+    this->end = newData;
     
     this->size += 1;
     
 }
+template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
     assert(index >= 0 && index <= this-> size);
@@ -101,6 +103,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     
     
 }
+template <class Type>
 Type LinkedList<Type> :: getFromIndex(int index)
 {
     assert(index >= 0 && index< this->size);
@@ -117,6 +120,7 @@ Type LinkedList<Type> :: getFromIndex(int index)
     
     return data;
 }
+template <class Type>
 Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -137,7 +141,7 @@ Type LinkedList<Type> :: remove(int index)
         for(int position =0; position < index; position++)
         {
             previous= current;
-            current = current->getNextNode;
+            current = current->getNextNode();
         }
         
         toBeRemoved = current;
@@ -155,18 +159,21 @@ Type LinkedList<Type> :: remove(int index)
     }
     this->size -=1;
     
-    removeData = toBeRemoved-> getData();
+    removedData = toBeRemoved-> getData();
     delete toBeRemoved;
     return removedData;
 }
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this->end;
 }
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getFront()
 {
-    return this->Front;
+    return this->front;
 }
+template <class Type>
 int LinkedList<Type> :: getSize() const
 {
     return this->size;

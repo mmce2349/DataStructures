@@ -11,7 +11,7 @@
 
 #include <assert.h>
 #include "../../Nodes/LinearNode.hpp"
-
+template <class Type>
 class ListAbstractBase
 {
 protected:
