@@ -57,7 +57,7 @@ void LinkedList<Type> :: add(Type item)
     
     if(this->size == 0)
     {
-        this->front = newData;
+        this->front = new Data;
     }
     else
     {

@@ -13,7 +13,7 @@
 #include "Node.hpp"
 
 template <class Type>
-class linearNode : public Node<Type>
+class LinearNode : public Node<Type>
 {
 protected:
     LinearNode<Type> * next;
@@ -39,7 +39,7 @@ LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-LinearNode<Type>:: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(Data)
+LinearNode<Type>:: LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(data)
 {
     this->next = next;
 }

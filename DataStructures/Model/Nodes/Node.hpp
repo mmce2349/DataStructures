@@ -11,8 +11,8 @@
 
 #include <stdio.h>
 
-<class Type>
-Class Node
+template <class Type>
+class Node
 {
 protected:
     Type data;
