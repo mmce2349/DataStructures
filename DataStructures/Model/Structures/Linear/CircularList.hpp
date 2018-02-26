@@ -166,4 +166,9 @@ Type CircularList<Type> :: remove(int index)
     delete removed;
     return value;
 }
+template <class Type>
+int CircularList<Type> :: getSize() const
+{
+    return this->size;
+}
 #endif /* CircularList_hpp */
