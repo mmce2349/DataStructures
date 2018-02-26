@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B1E69A4203F1464002E72EE /* CircularList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E69A2203F1464002E72EE /* CircularList.cpp */; };
 		0B1E69A7203F1CFE002E72EE /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E69A5203F1CFE002E72EE /* LinkedListTester.cpp */; };
 		0B2C2A3120220CED006F7468 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A2F20220CED006F7468 /* Controller.cpp */; };
 		0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A3220220CF9006F7468 /* Runner.cpp */; };
@@ -32,7 +31,6 @@
 /* Begin PBXFileReference section */
 		0B1E699D203F1449002E72EE /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		0B1E69A0203F1457002E72EE /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
-		0B1E69A2203F1464002E72EE /* CircularList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CircularList.cpp; sourceTree = "<group>"; };
 		0B1E69A3203F1464002E72EE /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		0B1E69A5203F1CFE002E72EE /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		0B1E69A6203F1CFE002E72EE /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 				0B554D6D2024BF6F004387FF /* Array.hpp */,
 				0B1E699D203F1449002E72EE /* Queue.hpp */,
 				0B1E69A0203F1457002E72EE /* Stack.hpp */,
-				0B1E69A2203F1464002E72EE /* CircularList.cpp */,
 				0B1E69A3203F1464002E72EE /* CircularList.hpp */,
 			);
 			path = Linear;
@@ -240,7 +237,6 @@
 				0B2C2A5D20222258006F7468 /* CrimeData.cpp in Sources */,
 				0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */,
 				0B2C2A3620220DC3006F7468 /* FileController.cpp in Sources */,
-				0B1E69A4203F1464002E72EE /* CircularList.cpp in Sources */,
 				0B1E69A7203F1CFE002E72EE /* LinkedListTester.cpp in Sources */,
 				0B503BDF202A001700FAF71C /* ArrayTester.cpp in Sources */,
 				0B2C2A3B20220F3A006F7468 /* Timer.cpp in Sources */,
