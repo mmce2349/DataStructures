@@ -23,3 +23,16 @@ int RecursionTester :: fib(int number)
     }
 }
 
+string RecursionTester :: mystery(string word)
+{
+    return "";
+}
+
+void RecursionTester :: testRecursionNumbers()
+{
+    
+}
+void RecursionTester :: testRecursionString()
+{
+    
+}
