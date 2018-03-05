@@ -17,7 +17,7 @@ void Controller :: start()
 //    findMaxandMin();
     
     RecursionTester test;
-    test.testRecursionNumbers();
+    test.testRecursionString();
 }
 
 void Controller :: findMaxandMin()
