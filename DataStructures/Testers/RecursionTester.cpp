@@ -54,6 +54,8 @@ void RecursionTester :: testRecursionNumbers()
 }
 void RecursionTester :: testRecursionString()
 {
-    cout << mystery("x") << endl;
-    
+    cout << otherMystery("x") << endl;
+    cout << otherMystery("bob")<<endl;
+    cout<< otherMystery("Why")<<endl;
+    cout<<otherMystery("Coolio")<<endl;
 }
