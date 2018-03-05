@@ -25,9 +25,23 @@ int RecursionTester :: fib(int number)
 
 string RecursionTester :: mystery(string word)
 {
+    if (word.length() == 1)
+    {
+        return word;
+    }
     return "";
 }
-
+string RecursionTester :: otherMystery(string word)
+{
+    if (word.length() == 3)
+    {
+        return word;
+    }
+    else
+    {
+        return word + otherMystery(word.substr(1, word.length()-2));
+    }
+}
 void RecursionTester :: testRecursionNumbers()
 {
     Timer recursionTimer;
@@ -40,5 +54,6 @@ void RecursionTester :: testRecursionNumbers()
 }
 void RecursionTester :: testRecursionString()
 {
+    cout << mystery("x") << endl;
     
 }
