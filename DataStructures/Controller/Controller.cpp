@@ -11,10 +11,13 @@
 
 void Controller :: start()
 {
-    ArrayTester myTest;
-    myTest.testArrayUse();
-    myTest.testAdvancedArray();
-    findMaxandMin();
+//    ArrayTester myTest;
+//    myTest.testArrayUse();
+//    myTest.testAdvancedArray();
+//    findMaxandMin();
+    
+    RecursionTester test;
+    test.testRecursionNumbers();
 }
 
 void Controller :: findMaxandMin()

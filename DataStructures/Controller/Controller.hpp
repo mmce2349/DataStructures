@@ -14,6 +14,10 @@
 #include <iostream>
 #include "FileController.hpp"
 #include "../Testers/ArrayTester.hpp"
+#include "../Testers/RecursionTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
+
+
 using namespace std;
 class Controller
 {
