@@ -17,7 +17,7 @@
 #include <iostream>
 using namespace std;
 
-class TestingStackAndQueues
+class TestingStacksAndQueues
 {
 public:
     void stackVersusList();
