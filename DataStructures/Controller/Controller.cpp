@@ -16,8 +16,8 @@ void Controller :: start()
 //    myTest.testAdvancedArray();
 //    findMaxandMin();
     
-    RecursionTester test;
-    test.testRecursionString();
+    SortingTester my;
+    my.testSorts();
 }
 
 void Controller :: findMaxandMin()
