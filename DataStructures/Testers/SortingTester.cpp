@@ -34,3 +34,21 @@ int SortingTester :: partition(vector<CrimeData> info, int low, int high)
     return smallest +1;
 }
 
+void SortingTester :: swap(vector<CrimeData> info, int small, int large)
+{
+    CrimeData temp = info[small];
+    info[small] = info[large];
+    info[large] = temp;
+}
+
+void SortingTester :: testSorts()
+{
+    Timer sortTimer;
+    vector<CrimeData> data = FileController :: readCrimeDataToVector("/Users/mmce2349/Documents/Data Structures 2018/DataStructures/DataStructures/Data/crime.csv");
+    
+    sortTimer.startTimer();
+    quickSort(data, 0, data.size());
+    sortTimer.stopTimer();
+    sortTimer.displayInformation();
+}
+
