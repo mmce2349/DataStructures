@@ -14,6 +14,7 @@
 		0B2C2A3B20220F3A006F7468 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A3920220F3A006F7468 /* Timer.cpp */; };
 		0B2C2A5D20222258006F7468 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A5A20222258006F7468 /* CrimeData.cpp */; };
 		0B503BDF202A001700FAF71C /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B503BDD202A001700FAF71C /* ArrayTester.cpp */; };
+		0B5D0EFC205AB3BA00AC9115 /* SortingTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B5D0EFA205AB3BA00AC9115 /* SortingTester.cpp */; };
 		0BBC87DC204D8F4300030368 /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BBC87DA204D8F4300030368 /* RecursionTester.cpp */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		0B503BDE202A001700FAF71C /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		0B503BE3202A10BC00FAF71C /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		0B554D6D2024BF6F004387FF /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		0B5D0EFA205AB3BA00AC9115 /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
+		0B5D0EFB205AB3BA00AC9115 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 		0B7916E520445F1700AB1A28 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		0B7E9211203C6FCA00AC026B /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		0BA9160E202CB2DA0001F3A6 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 				0B1E69A6203F1CFE002E72EE /* LinkedListTester.hpp */,
 				0BBC87DA204D8F4300030368 /* RecursionTester.cpp */,
 				0BBC87DB204D8F4300030368 /* RecursionTester.hpp */,
+				0B5D0EFA205AB3BA00AC9115 /* SortingTester.cpp */,
+				0B5D0EFB205AB3BA00AC9115 /* SortingTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				0B2C2A3120220CED006F7468 /* Controller.cpp in Sources */,
 				0B2C2A5D20222258006F7468 /* CrimeData.cpp in Sources */,
 				0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */,
+				0B5D0EFC205AB3BA00AC9115 /* SortingTester.cpp in Sources */,
 				0B2C2A3620220DC3006F7468 /* FileController.cpp in Sources */,
 				0B1E69A7203F1CFE002E72EE /* LinkedListTester.cpp in Sources */,
 				0BBC87DC204D8F4300030368 /* RecursionTester.cpp in Sources */,
