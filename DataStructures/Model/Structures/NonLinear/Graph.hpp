@@ -77,5 +77,20 @@ Type Graph<Type> :: operator[](int vertex) const
     assert(vertex < vertexCount);
     return graphData[vertex];
 }
+template<class Type>
+void Graph<Type> :: addVertex(const Type& value)
+{
+    assert(vertexCount < MAXIMUM);
+    int newVertexNumber = vertexCount;
+    vertexCount;
+    
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber)
+    {
+        adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
+    }
+    graphData[newVertexNumber] = value;
+}
+}
 
 #endif /* Graph_hpp */
