@@ -184,7 +184,20 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 template<class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type>& currentGraph, int vertex, bool * visited)
 {
+    std::set<int> connections = currentGraph.neighbors(vertex);
+    std::set<int>::iterator setIterator;
     
+    visited[vertex] = true;
+    cout << currentGraph[vertex] << ", " << endl;
+    
+    for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
+    {
+        if(!visited[*setIterator])
+        {
+            depthFirstTraversal(currentGraph, *setIterator, visited);
+        }
+        
+    }
 }
 
 #endif /* Graph_hpp */
