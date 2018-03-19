@@ -105,5 +105,13 @@ void Graph<Type> :: removeEdgeUndirected(int source, int target)
     adjacencyMatrix[target][source] = false;
 }
 
+template<class Type>
+void Graph<Type> :: removeEdgeCost(int source, int target)
+{
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
+    weightCostMatrix[source][target] = 0;
+    weightCostMatrix[target][source] = 0;
+}
+
 
 #endif /* Graph_hpp */
