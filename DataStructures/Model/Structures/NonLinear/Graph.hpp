@@ -171,6 +171,20 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
     }
     return vertexNeighbors;
 }
+template<class Type>
+void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
+{
+    
+    bool visitedVertices[MAXIMUM];
+    assert(vertex < currentGraph.size());
+    std::fill_n(visitedVertices, currentGraph.size(), false);
+    depthFirstTraversal(currentGraph, vertex, visitedVertices);
+}
 
+template<class Type>
+void Graph<Type> :: depthFirstTraversal(Graph<Type>& currentGraph, int vertex, bool * visited)
+{
+    
+}
 
 #endif /* Graph_hpp */
