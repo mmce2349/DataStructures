@@ -65,7 +65,7 @@ int Graph<Type> :: size() const
     return vertexCount;
 }
 
-template<class Type>
+template<class Type>//side into vertex
 Type& Graph<Type> :: operator[](int vertex)
 {
     assert(vertex < vertexCount);
