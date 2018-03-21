@@ -204,7 +204,7 @@ template <class Type>
 void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     
-    asser(vertex< currentGraph.size());
+    assert(vertex< currentGraph.size());
     bool visited[MAXIMUM];
     std::set<int> connections;
     std::set<int>::iterator setIterator;
