@@ -75,12 +75,12 @@ void Stack<Type> :: addAtIndex(int index, Type data)
     push(data);
 }
 template <class Type>
-Type Stack<Type>:: pop();
+Type Stack<Type>:: pop()
 {
     assert (this->size > 0);
     Type removed = this->front->getData();
     LinearNode<Type> * removedNode = this->getFront();
-    this->setFront = removedNode->getNextNode();
+    this-> setFront = removedNode->getNextNode();
     delete removedNode;
     
     this->size--;
