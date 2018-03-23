@@ -14,7 +14,10 @@ void GraphTester :: testGraphs()
 }
 void GraphTester :: compareTraversals()
 {
-    
+    for(int index = 0; index < puzzle.size(); index++)
+    {
+        
+    }
     
 }
 void GraphTester :: setup()
