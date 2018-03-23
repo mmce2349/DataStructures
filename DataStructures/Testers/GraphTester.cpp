@@ -6,7 +6,13 @@
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
+#include <iostream>
 #include "GraphTester.hpp"
+void GraphTester :: TestGraph()
+{
+    void setup();
+    void compareTraversals();
+}
 void GraphTester :: setup()
 {
     puzzle.addVertex("a ");
@@ -104,8 +110,10 @@ void GraphTester :: setup()
     puzzle.addEdgeCost(13, 15, 88);
     puzzle.addEdgeCost(19, 13, 21);
 }
-void GraphTester :: TestGraph()
+Void GraphTester :: compareTraversals()
 {
-    void setup();
-    void compareTraversals();
+    
 }
+
+
+
