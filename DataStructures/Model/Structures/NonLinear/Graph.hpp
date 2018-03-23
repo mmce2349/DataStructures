@@ -164,10 +164,10 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
     std::set<int> vertexNeighbors;
     for(int index = 0; index < vertexCount; index++)
     {
-     if(adjacencyMatrix[vertex][index])
-     {
-         vertexNeighbors.insert(index);
-     }
+        if(adjacencyMatrix[vertex][index])
+        {
+            vertexNeighbors.insert(index);
+        }
         
     }
     return vertexNeighbors;
@@ -220,14 +220,14 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
         vertexQueue.pop();
         for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
         {
-         if(!visited[*setIterator])
-         {
-             visited[*setIterator] = true;
-             cout << currentGraph[*setIterator] << endl;
-             vertexQueue.push(*setIterator);
-             
-         }
-             
+            if(!visited[*setIterator])
+            {
+                visited[*setIterator] = true;
+                cout << currentGraph[*setIterator] << endl;
+                vertexQueue.push(*setIterator);
+                
+            }
+            
         }
         
     }
@@ -255,14 +255,15 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
         
         for(setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
         {
-         if(!visited[*setIterator])
-         {
-             cost += weightCostMatrix[currentIndex][*setIterator];
-             visited[*setIterator] = true;
-             vertexQueue.push(*setIterator);
-         }
+            if(!visited[*setIterator])
+            {
+                cost += weightCostMatrix[currentIndex][*setIterator];
+                visited[*setIterator] = true;
+                vertexQueue.push(*setIterator);
+            }
         }
-        return cost;
+    }
+    return cost;
 }
 
 #endif /* Graph_hpp */
