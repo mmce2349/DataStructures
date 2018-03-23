@@ -208,7 +208,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
     bool visited[MAXIMUM];
     std::set<int> connections;
     std::set<int>::iterator setIterator;
-    std::set<int> vertexQueue;
+    std::queue<int> vertexQueue;
     
     std::fill_n(visited,currentGraph.size(), false);
     visited[vertex] = true;
