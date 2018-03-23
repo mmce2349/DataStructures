@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B1E69A7203F1CFE002E72EE /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1E69A5203F1CFE002E72EE /* LinkedListTester.cpp */; };
+		0B2113DC2065429E005E0702 /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2113DA2065429E005E0702 /* GraphTester.cpp */; };
 		0B2C2A3120220CED006F7468 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A2F20220CED006F7468 /* Controller.cpp */; };
 		0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A3220220CF9006F7468 /* Runner.cpp */; };
 		0B2C2A3620220DC3006F7468 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C2A3420220DC3006F7468 /* FileController.cpp */; };
@@ -37,6 +38,8 @@
 		0B1E69A3203F1464002E72EE /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		0B1E69A5203F1CFE002E72EE /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		0B1E69A6203F1CFE002E72EE /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
+		0B2113DA2065429E005E0702 /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
+		0B2113DB2065429E005E0702 /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
 		0B2C2A1F20220B88006F7468 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2C2A2F20220CED006F7468 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		0B2C2A3020220CED006F7468 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
@@ -161,6 +164,8 @@
 				0B5D0EFB205AB3BA00AC9115 /* SortingTester.hpp */,
 				0B5D0EFD205AC2D300AC9115 /* TestingStacksAndQueues.cpp */,
 				0B5D0EFE205AC2D300AC9115 /* TestingStacksAndQueues.hpp */,
+				0B2113DA2065429E005E0702 /* GraphTester.cpp */,
+				0B2113DB2065429E005E0702 /* GraphTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				0B2C2A5D20222258006F7468 /* CrimeData.cpp in Sources */,
 				0B2C2A3320220CF9006F7468 /* Runner.cpp in Sources */,
 				0B5D0EFC205AB3BA00AC9115 /* SortingTester.cpp in Sources */,
+				0B2113DC2065429E005E0702 /* GraphTester.cpp in Sources */,
 				0B2C2A3620220DC3006F7468 /* FileController.cpp in Sources */,
 				0B1E69A7203F1CFE002E72EE /* LinkedListTester.cpp in Sources */,
 				0BBC87DC204D8F4300030368 /* RecursionTester.cpp in Sources */,
