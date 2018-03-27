@@ -20,16 +20,16 @@ private:
     left : BinaryTreeNode<Type>*;
     right : BinaryTreeNode<Type>*;
 public:
-    BinaryTreeNode() : Constructor;
-    BinaryTreeNode(Type data) : Constructor;
+    BinaryTreeNode();
+    BinaryTreeNode(Type data);
     
-    getRoot() : Constructor;
+    getRoot() : BinaryTreeNode<Type>*;
     getLeft() : BinaryTreeNode<Type>*;
     getRight() : BinaryTreeNode<Type>*;
     
-    setRoot(BinaryTreeNode<Type>*) : void;
-    setLeft(BinaryTreeNode<Type>*) : void;
-    setRight(BinaryTreeNode<Type>*) : void;
+    void setRoot(BinaryTreeNode<Type>*);
+    void setLeft(BinaryTreeNode<Type>*);
+    void setRight(BinaryTreeNode<Type>*);
 };
 
 #endif /* BinaryTree_hpp */
