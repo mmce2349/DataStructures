@@ -16,20 +16,20 @@ template <class Type>
 class BinaryTree : public Node<Type>
 {
 private:
-    root : BinaryTreeNode<Type>*;
-    left : BinaryTreeNode<Type>*;
-    right : BinaryTreeNode<Type>*;
+    BinaryTreeNode<Type>* root;
+     BinaryTreeNode<Type>* left;
+    BinaryTreeNode<Type>* right;
 public:
     BinaryTreeNode();
     BinaryTreeNode(Type data);
     
-    getRoot() : BinaryTreeNode<Type>*;
-    getLeft() : BinaryTreeNode<Type>*;
-    getRight() : BinaryTreeNode<Type>*;
+       BinaryTreeNode<Type>*getRootNode();
+      BinaryTreeNode<Type>*getLeftNode();
+     BinaryTreeNode<Type>*getRightNode();
     
-    void setRoot(BinaryTreeNode<Type>*);
-    void setLeft(BinaryTreeNode<Type>*);
-    void setRight(BinaryTreeNode<Type>*);
+    void setRootNode(BinaryTreeNode<Type>* root);
+    void setLeftNode(BinaryTreeNode<Type>* right);
+    void setRightNode(BinaryTreeNode<Type>* left);
 };
 
 #endif /* BinaryTree_hpp */
