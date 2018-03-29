@@ -57,6 +57,12 @@ public:
 };
 
 template <class type>
+BinarySearchTree<Type> :: BinarySearchTree()
+{
+    this->root = nullptr;
+}
+
+template <class type>
 
 
 #endif /* BinarySearchTree_hpp */
