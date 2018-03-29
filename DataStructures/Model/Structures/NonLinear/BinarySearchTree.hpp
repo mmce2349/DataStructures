@@ -127,6 +127,7 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
         inOrderTraversal(inStart->getRightNode());
     }
 }
+
 template<class type>
 bool BinarySearchTree<Type> :: contains(Type value)
 {
