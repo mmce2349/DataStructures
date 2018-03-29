@@ -17,6 +17,7 @@
 #include "../Testers/RecursionTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/SortingTester.hpp"
+#include "../Testers/BinaryTreeTester.hpp"
 
 
 using namespace std;
