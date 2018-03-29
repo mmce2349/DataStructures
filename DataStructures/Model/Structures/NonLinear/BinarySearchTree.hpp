@@ -127,5 +127,36 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
         inOrderTraversal(inStart->getRightNode());
     }
 }
+template<class type>
+bool BinarySearchTree<Type> :: contains(Type value)
+{
+    return false;
+}
+template<class type>
+void BinarySearchTree<Type> :: remove(Type item)
+{
+  
+}
+template <class type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return -1;
+}
+template <class type>
+int BinarySearchTree<Type> :: getSize()
+{
+    return -1;
+}
+template <class type>
+bool BinarySearchTree<Type> :: isComplete()
+{
+    return false;
+}
+template <class type>
+bool BinarySearchTree<Type> :: isBalanced()
+{
+    return false;
+}
+
 
 #endif /* BinarySearchTree_hpp */
