@@ -63,6 +63,50 @@ BinarySearchTree<Type> :: BinarySearchTree()
 }
 
 template <class type>
+void BinarySearchTree <Type> :: insert(Type itemToInsert)
+{
+    BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
+    BinaryTreeNode<Type> * previous = nullptr;
+    BinaryTreeNode<Type> * current = this->root;
+    
+    if(current== nullptr)
+    {
+        this->root = insertMe;
+    }
+    else
+    {
+        while(current != nullptr)
+        {
+            previous = current;
+            if(itemToInsert < current -> getData())
+            {
+                current = current -> getLeftNode();
+            }
+            else if(itemToInsert > current->getData())
+            {
+                current = current ->getRightNode();
+            }
+            else
+            {
+                cerr << "Item exists already - exiting insert" << endl;
+                delete insertMe;
+                return;
+            }
+            
+        }
+    
+        if (previous->getData() > itemToInsert)
+        {
+        previous->setLeftNode(insertMe);
+        }
+        else
+        {
+        previous->setRightNode(previous);
+        }
+        insertMe->setRootNode(previous);
 
+    }
+    
+}
 
 #endif /* BinarySearchTree_hpp */
