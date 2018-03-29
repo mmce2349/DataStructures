@@ -97,11 +97,11 @@ void BinarySearchTree <Type> :: insert(Type itemToInsert)
     
         if (previous->getData() > itemToInsert)
         {
-        previous->setLeftNode(insertMe);
+            previous->setLeftNode(insertMe);
         }
         else
         {
-        previous->setRightNode(previous);
+            previous->setRightNode(previous);
         }
         insertMe->setRootNode(previous);
 
