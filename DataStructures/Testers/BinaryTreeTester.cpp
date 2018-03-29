@@ -8,3 +8,19 @@
 
 #include "BinaryTreeTester.hpp"
 
+void BinaryTreeTester :: testTreeStuff()
+{
+    testTree.insert(3);
+    testTree.insert(1);
+    testTree.insert(2);
+    testTree.insert(-12312341);
+    testTree.insert(7);
+    testTree.insert(5);
+    testTree.insert(6);
+    testTree.insert(8);
+    testTree.insert(5000);
+    testTree.insert(9001);
+    testTree.insert(10);
+    testTree.insert(420);
+    testTree.insert(600);
+}
