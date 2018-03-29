@@ -32,7 +32,8 @@ protected:
     void removeNode(BinaryTreeNode<Type> * removeMe);
     
 public:
-    
+    BinarySearchTree();
+    ~BinarySearchTree();
 }
 
 #endif /* BinarySearchTree_hpp */
