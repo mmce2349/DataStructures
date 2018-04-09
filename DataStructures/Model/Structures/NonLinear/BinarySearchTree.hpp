@@ -254,7 +254,22 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type* removeMe)
             removeMe->setRootNode(previous);
             delete temp;
         }
-        else if // right child
+        else if (removeMe->getLeftNode() == nullptr)
+        {
+            temp = removeMe;
+            removeMe= removeMe->getRightNode();
+            if(previous != nullptr && removeMe->getData() < previous-> getData())
+            {
+                previous->setLeftNode(removeMe);
+            }
+            else if(previous != nullptr && removeMe-> getData() > previous-> getData())
+            {
+                previous -> setRightNode(removeMe);
+            }
+            removeMe->setRightNode(removeMe);
+            delete temp;
+        }
+        //do both children method
         
         delete temp;
     }
