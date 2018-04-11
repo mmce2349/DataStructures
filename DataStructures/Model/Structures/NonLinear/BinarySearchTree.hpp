@@ -130,7 +130,17 @@ void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
 template <class Type>
 BinarySearchTree<Type> :: ~BinarySearchTree()
 {
-    
+    destroyTree(this->root);
+}
+template <class type>
+void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type>* node)
+{
+    if(node != nullptr)
+    {
+        destroyTree(node->getLeftNode());
+        destroyTree(node->getRightNode());
+        delete node;
+    }
 }
 template<class type>
 bool BinarySearchTree<Type> :: contains(Type itemToFind)
