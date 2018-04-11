@@ -270,10 +270,69 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type* removeMe)
             delete temp;
         }
         //do both children method
-        
+        else
+        {
+            current = getRightMostChild(removeMe->getLeftNode());
+            previous = current->getRootNode();
+            removeMe->setData(current->getData());
+            if(previous == nullptr)
+            {
+                removeMe->setLeftNode(current->getLeftNode());
+                
+            }
+            else
+            {
+                previous->setRightNode(current->getLeftNode());
+            }
+            if(current->getLeftNode() != nullptr)
+            {
+                current->getLeftNode()->setRootNode(removeMe);
+            }
+            delete current;
+        }
         delete temp;
     }
+    if(removeMe == nullptr || removeMe->getRootNode() == nullptr)
+    {
+        this->root = removeMe;
+    }
 }
+template <class type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * startingNode)
+{
+    
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    while(currentNode != nullptr)
+    {
+        currentNode = currentNode->getRightNode();
+    }
+    return currentNode;
+}
+template<class type>
+BinaryTreeNode<Type>* BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
+{
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    while(currentNode != nullptr)
+    {
+        currentNode = currentNode->getLeftNode();
+    }
+    return currentNode;
+}
+template <class type>
+Type BinarySearchTree<Type> :: findMaximum()
+{
+    
+    assert(this->root != nullptr);
+    return getRightMostChild(this->root)->getData();
+}
+template <class type>
+Type BinarySearchTree<Type> :: findMinimum()
+{
+    
+    assert(this->root != nullptr);
+           return getLeftMostChild(this->root)->getData();
+}
+
 template <class type>
 int BinarySearchTree<Type> :: getHeight()
 {
