@@ -102,6 +102,7 @@ BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Typ> * pa
                 parent = rightRotation(parent);
             }
         }
+    return parent;
 }
 
 #endif /* AVLTree_hpp */
