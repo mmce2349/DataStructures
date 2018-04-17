@@ -10,6 +10,7 @@
 #define AVLTree_hpp
 
 #include "BinarySearchTree.hpp"
+template <class Type>
 class AVLTree : public BinarySearchTree<Type>
 {
 private:
