@@ -42,6 +42,23 @@ int AVLTree:: heightDifference(BinaryTreeNode<Type> * node)
     balance = leftHeight-rightHeight;
     return balance;
 }
-
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: leftRotation (BinaryTreeNode<Type> * parent)
+{
+    BinaryTreeNode<Type>* changedNode;
+    changedNode = parent->getLeftNode();
+    parent->setLeftChild(changedNode->getRightNode());
+    changedNode->setRightChild(parent);
+    return changedNode;
+}
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: rightRotation (BinaryTreeNode<Type> * parent)
+{
+    BinaryTreeNode<Type>* changedNode;
+    changedNode = parent->getRightNode();
+    parent->setRightChild(changedNode->getLeftNode());
+    changedNode->setLeftChild(parent);
+    return changedNode;
+}
 
 #endif /* AVLTree_hpp */
