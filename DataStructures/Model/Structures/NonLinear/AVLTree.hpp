@@ -104,5 +104,52 @@ BinaryTreeNode<Type> * AVLTree<Type> :: balanceSubTree (BinaryTreeNode<Typ> * pa
         }
     return parent;
 }
+template <class Type>
+BinaryTreeNode<Type> * AVLTree<Type> :: removeNode(BinaryTreeNode<Type> * parent, Type inserted)
+{
+    
+    if(parent == nullptr)
+    {
+        return parent;
+    }
+    if(inserted < parent -> getNodeDate())
+    {
+        parent->setLeftChild(removeNode(parent->getLeftNode(), inserted));
+    }
+    else if(inserted > parent -> getNodeData())
+    {
+        parent->setRightChild(removeNode(parent->getRightNode(), inserted));
+    }
+    else
+    {
+        BinaryTreeNode<Type> * temp;
+        if(parent->getLeftNode() == nullptr && parent-> getRightNode() == nullptr)
+        {
+            temp = parent;
+            delete temp;
+        }
+        else if(parent->getLeftNode() == nullptr)
+        {
+            *parent = *parent->getRightNode();
+        }
+        else if(parent->getRightNode() == nullptr)
+        {
+            *parent = *parent->getLefttNode();
+        }
+        else
+        {
+            BinaryTreeNode<Type> * leftMost = this->getLeftMostChild(parent->getRightNode());
+            parent->setNodeData(leftMost->getNodeData());
+            parent->setRightChild(removeNode(parent->getRightNode(), leftMost->getNodeData()));
+            
+        }
+        
+    }
+    if(parent == nullptr)
+       {
+           return parent;
+       }
+    return balancedSubTree(parent);
+}
 
 #endif /* AVLTree_hpp */
