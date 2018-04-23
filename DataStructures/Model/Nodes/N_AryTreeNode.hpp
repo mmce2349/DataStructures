@@ -52,6 +52,26 @@ N_AryTreeNode<type> * N_AryTreeNode<Type> :: getRoot()
 {
     return root;
 }
-
+template<class Type>
+set<N_AryTreeNode<type>*> N_AryTreeNode<Type> :: getNodes()
+{
+    return nodes;
+}
+template<class Type>
+int N_AryTreeNode<type> :: getChildCount()
+{
+    return nodes.size();
+}
+template<class Type>
+void N_AryTreeNode<type> :: setRoot(N_AryTreeNode<Type> * root)
+{
+    this->root = root;
+}
+template<class Type>
+void N_AryTreeNode<type> :: addChild(Type data)
+{
+    N_AryTreeNode<Type * node = new N_AryTreeNode<Type>(data);
+    nodes.insert(node);
+}
 
 #endif /* N_AryTreeNode_hpp */
