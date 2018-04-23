@@ -48,6 +48,7 @@ N_AryTreeNode<Type> :: ~N_AryTreeNode()
     for(std::set<N_AryTreeNode<Type> *> ::iterator iter = nodes.begin(); iter !=nodes.end(); iter ++)
     {
         nodes.erase(iter);
+        iter--;
     }
 }
 template<class Type>
