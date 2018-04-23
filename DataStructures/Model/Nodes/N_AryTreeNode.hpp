@@ -10,6 +10,7 @@
 #define N_AryTreeNode_hpp
 
 #include <set>
+#include <vector>
 #include "Node.hpp"
 using namespace std;
 
