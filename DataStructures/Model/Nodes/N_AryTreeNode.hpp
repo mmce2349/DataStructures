@@ -17,14 +17,14 @@ template<class Type>
 class N_AryTreeNode : public Node<type>
 {
 private:
-    set<N_AryTreeNode<Type>*> nodes;
+    vector<N_AryTreeNode<Type>*> nodes;
     N_AryTreeNode<Type> * root;
 public:
     N_AryTreeNode<Type>();
     ~N_AryTreeNode<Type>();
     N_AryTreeNode<Type>(Type data);
     
-    set<N_AryTreeNode<Type>*> getNodes();
+    vector<N_AryTreeNode<Type>*> getNodes();
     N_AryTreeNode<Type>* getRoot();
     int getChildCount();
     
@@ -45,7 +45,10 @@ N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
 template<class Type>
 N_AryTreeNode<Type> :: ~N_AryTreeNode()
 {
-    nodes.clear();
+    for(int index = nodes.size() - 1; index >=0; index --)
+    {
+        delete nodes[index];
+    }
 }
 template<class Type>
 N_AryTreeNode<type> * N_AryTreeNode<Type> :: getRoot()
@@ -53,7 +56,7 @@ N_AryTreeNode<type> * N_AryTreeNode<Type> :: getRoot()
     return root;
 }
 template<class Type>
-set<N_AryTreeNode<type>*> N_AryTreeNode<Type> :: getNodes()
+vector<N_AryTreeNode<type>*> N_AryTreeNode<Type> :: getNodes()
 {
     return nodes;
 }
