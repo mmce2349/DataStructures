@@ -32,6 +32,10 @@ public:
     void addChild(N_AryTreeNode<Type> * node);
 };
 
+template<class Type>
+N_AryTreeNode<Type> :: N_AryTreeNode()
+{//unused
+}
 
 
 #endif /* N_AryTreeNode_hpp */
