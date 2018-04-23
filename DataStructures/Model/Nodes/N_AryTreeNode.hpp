@@ -29,7 +29,7 @@ public:
     int getChildCount();
     
     void setRoot(N_AryTreeNode<Type>* root);
-    void addChild(N_AryTreeNode<Type> * node);
+    void addChild(Type data);
 };
 
 template<class Type>
@@ -45,6 +45,7 @@ N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
 template<class Type>
 N_AryTreeNode<Type> :: ~N_AryTreeNode()
 {
+    std::set<N_AryTreeNode<Type> *> ::iterator iter;
     for(std::set<N_AryTreeNode<Type> *> ::iterator iter = nodes.begin(); iter !=nodes.end(); iter ++)
     {
         nodes.erase(iter);
