@@ -45,10 +45,15 @@ N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
 template<class Type>
 N_AryTreeNode<Type> :: ~N_AryTreeNode()
 {
-    for(int index = node.size(); index >= 0; index --)
+    for(std::set<N_AryTreeNode<Type> *> ::iterator iter = nodes.begin(); iter !=nodes.end(); iter ++)
     {
-        delete nodes[index];
+        nodes.erase(iter);
     }
+}
+template<class Type>
+N_AryTreeNode<type> * N_AryTreeNode<Type> :: getRoot()
+{
+    return root;
 }
 
 
