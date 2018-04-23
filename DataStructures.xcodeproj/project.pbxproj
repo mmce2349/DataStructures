@@ -73,6 +73,7 @@
 		0BA91611202CB5860001F3A6 /* ListAbstractBase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListAbstractBase.hpp; sourceTree = "<group>"; };
 		0BBC87DA204D8F4300030368 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		0BBC87DB204D8F4300030368 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
+		0BEA2EC6208E219C00E901DC /* N_AryTreeNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = N_AryTreeNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +186,7 @@
 				0B503BE3202A10BC00FAF71C /* Node.hpp */,
 				0BA9160E202CB2DA0001F3A6 /* LinearNode.hpp */,
 				0B7916E520445F1700AB1A28 /* DoubleNode.hpp */,
+				0BEA2EC6208E219C00E901DC /* N_AryTreeNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
