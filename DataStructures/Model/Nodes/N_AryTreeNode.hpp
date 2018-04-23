@@ -36,6 +36,20 @@ template<class Type>
 N_AryTreeNode<Type> :: N_AryTreeNode()
 {//unused
 }
+template<class Type>
+N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
+{
+    
+}
+
+template<class Type>
+N_AryTreeNode<Type> :: ~N_AryTreeNode()
+{
+    for(int index = node.size(); index >= 0; index --)
+    {
+        delete nodes[index];
+    }
+}
 
 
 #endif /* N_AryTreeNode_hpp */
