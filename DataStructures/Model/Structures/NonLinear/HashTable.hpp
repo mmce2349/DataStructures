@@ -25,6 +25,7 @@ Hashtable<Type> :: Hashtable()
 {
     internalStorage = new HashNode<Type>[101];
     size = 0;
+    loadFactor= .80;
 }
 
 template <class Type>
