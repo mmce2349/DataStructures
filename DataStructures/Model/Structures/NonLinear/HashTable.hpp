@@ -22,18 +22,22 @@ private:
     bool isPrime(long current);
     void resize();
     long findPosition(HashNode<Type>* insertedNode);
+    long handleCollision(HashNode<Type>* insertedNode, long index);
 public:
     Hashtable();
     ~Hashtable();
     
     void insert(Type data);
+    long getSize();
 
+    
 };
 
 template<class Type>
 Hashtable<Type> :: Hashtable()
 {
-    internalStorage = new HashNode<Type>*[101];
+    capacity = 101;
+    internalStorage = new HashNode<Type>*[capacity];
     size = 0;
     loadFactor= .80;
 }
@@ -51,6 +55,16 @@ bool Hashtable<Type> :: isPrime(long current)
 
 template<class Type>
 long Hashtable<Type>:: findPosition(HashNode<Type> * insert)
+{
+    return -1;
+}
+template <class Type>
+long Hashtable<Type>:: handleCollision(HashNode<Type> *, long index)
+{
+    return -1;
+}
+template <class Type>
+long Hashtable<Type> :: getSize()
 {
     return -1;
 }
