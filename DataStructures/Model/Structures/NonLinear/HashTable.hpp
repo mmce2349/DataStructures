@@ -14,6 +14,11 @@ template <class type>
 class Hashtable
 {
 private:
+    HashNode<Type> * internalStorage;
+    long size;
+    double loadFactor;
+    
+    long getNextPrime(long current);
 public:
     Hashtable();
     ~Hashtable();
@@ -34,4 +39,9 @@ Hashtable<Type> :: ~Hashtable()
     delete [] internalStorage;
 }
 
+template <class Type>
+long Hashtable<Type> :: getNextPrime(long currentNumber)
+{
+    return -1;
+}
 #endif /* HashTable_hpp */
