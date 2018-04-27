@@ -59,7 +59,7 @@ long Hashtable<Type>:: findPosition(HashNode<Type> * insert)
     return -1;
 }
 template <class Type>
-long Hashtable<Type>:: handleCollision(HashNode<Type> *, long index)
+long Hashtable<Type>:: handleCollision(HashNode<Type> * current, long index)
 {
     return -1;
 }
