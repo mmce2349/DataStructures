@@ -16,6 +16,10 @@ int main()
     cout << &word << endl;
     cout << &word2 << endl;
     
+    unsigned long * storage;
+    storage = new unsigned long [0xffffffff];
+    storage [address] = 0;
+    
     cout << &sample << endl;
     unsigned long address = (unsigned long) &sample;
     cout << address << endl;
