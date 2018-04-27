@@ -19,6 +19,7 @@ private:
     double loadFactor;
     
     long getNextPrime(long current);
+    void resize();
 public:
     Hashtable();
     ~Hashtable();
@@ -43,5 +44,10 @@ template <class Type>
 long Hashtable<Type> :: getNextPrime(long currentNumber)
 {
     return -1;
+}
+template <class Type>
+void Hashtable<Type> :: resize()
+{
+    
 }
 #endif /* HashTable_hpp */
