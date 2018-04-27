@@ -18,7 +18,8 @@ private:
     long size;
     double loadFactor;
     
-    long getNextPrime(long current);
+    long getNextPrime();
+    bool isPrime(long current);
     void resize();
 public:
     Hashtable();
@@ -41,14 +42,23 @@ Hashtable<Type> :: ~Hashtable()
 {
     delete [] internalStorage;
 }
-
 template <class Type>
-long Hashtable<Type> :: getNextPrime(long currentNumber)
+bool Hashtable<Type> :: isPrime(long current)
+{
+    return false;
+}
+template <class Type>
+long Hashtable<Type> :: getNextPrime()
 {
     return -1;
 }
 template <class Type>
 void Hashtable<Type> :: resize()
+{
+    
+}
+template <class Type>
+void Hashtable<Type> :: insert(Type value)
 {
     
 }
