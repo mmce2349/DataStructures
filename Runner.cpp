@@ -14,7 +14,10 @@ int main()
     cout << &sample << endl;
     unsigned long address = (unsigned long) &sample;
     cout << address << endl;
-    
+    if(&sample == address)
+    {
+        cout << "the same" << endl;
+    }
    // Controller app;
   //  app.start();
     return 0;
