@@ -19,9 +19,9 @@ public:
     HashNode();
     HashNode(Type data);
     
-    Type getData();
+ 
     long getKey() const;
-    void setData(Type data);
+
     
 };
  template <class Type>
@@ -36,7 +36,10 @@ HashNode<Type> :: HashNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-HashNode<Type> :: 
+long HashNode<Type> :: getKey() const
+{
+    return this-> key;
+}
 
 
 #endif /* HashNode_hpp */
