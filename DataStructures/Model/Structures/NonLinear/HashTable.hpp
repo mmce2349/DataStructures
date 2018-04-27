@@ -14,7 +14,7 @@ template <class type>
 class Hashtable
 {
 private:
-    HashNode<Type> * internalStorage;
+    HashNode<Type> ** internalStorage;
     long size;
     double loadFactor;
     
@@ -23,13 +23,15 @@ private:
 public:
     Hashtable();
     ~Hashtable();
+    
+    void insert(Type data);
 
 };
 
 template<class Type>
 Hashtable<Type> :: Hashtable()
 {
-    internalStorage = new HashNode<Type>[101];
+    internalStorage = new HashNode<Type>*[101];
     size = 0;
     loadFactor= .80;
 }
