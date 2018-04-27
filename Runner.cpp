@@ -11,6 +11,11 @@ using namespace std;
 int main()
 {
     int sample = 7;
+    string word = "asda";
+    string word2 = "asda";
+    cout << &word << endl;
+    cout << &word2 << endl;
+    
     cout << &sample << endl;
     unsigned long address = (unsigned long) &sample;
     cout << address << endl;
