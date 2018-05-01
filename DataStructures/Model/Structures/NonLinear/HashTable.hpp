@@ -10,6 +10,8 @@
 #define HashTable_hpp
 
 #include "../Nodes/HashNode.hpp"
+#include <cmath>
+
 template <class type>
 class Hashtable
 {
