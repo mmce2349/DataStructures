@@ -139,6 +139,24 @@ void Hashtable<Type> :: resize()
 template <class Type>
 void Hashtable<Type> :: insert(Type value)
 {
-    
+    this->size++;
+    if(((this->size *1.000)/ this->capacity) > this->loadFactor)
+    {
+        resize();
+    }
+    HashNode<Type> * temp = new HashNode<Type>(value);
+    long index = findPosition(temp);
+    if(internal[index] == nullptr)
+    {
+       internal[index] = temp;
+    }
+    else
+    {
+        long updatedPosition = handleCollision(temp, index);
+        if (updatedPosition != -1)
+        {
+            internal[updatedPosition]= temp;
+        }
+    }
 }
 #endif /* HashTable_hpp */
