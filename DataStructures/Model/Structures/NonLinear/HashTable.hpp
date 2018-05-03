@@ -106,7 +106,35 @@ long Hashtable<Type> :: getNextPrime()
 template <class Type>
 void Hashtable<Type> :: resize()
 {
+    long updatedCapacity = nextPrime();
+    HashNode<Type> ** tempStorage = new HashNode<Type> * [updatedCapacity];
     
+    std :: fill_n(tempStorage, updatedCapacity, nullptr);
+    
+    long oldCapacity = this->capacity;
+    this->capacity = updatedCapacity;
+    
+    for(long index = 0; index < oldCapacity; index ++)
+    {
+     if(hashTableStorage[index] != nullptr)
+     {
+         HashNode<Type> * temp = internalStorage[index];
+         long position = findPosition(temp);
+         if(tempStorage[position] == nullptr)
+         {
+             tempStorage[position] = temp;
+         }
+         else
+         {
+             long updatedPosition = handleCollision(temp, position);
+             if (updatedPosition != -1)
+             {
+                 tempStorage[updatedPosition]= temp;
+             }
+         }
+     }
+    }
+    internalStorage = tempStorage;
 }
 template <class Type>
 void Hashtable<Type> :: insert(Type value)
