@@ -84,8 +84,22 @@ long Hashtable<Type>:: findPosition(HashNode<Type> * insert)
     return insertPosition;
 }
 template <class Type>
-long Hashtable<Type>:: handleCollision(HashNode<Type> * current, long index)
+long Hashtable<Type>:: handleCollision( long currentPosition)
 {
+    long shift = 17;
+    
+    for(long position = currentPosition + shift; position != currentPosition; position += shift)
+    {
+     if(position >= capacity)
+     {
+         position = position % capacity;
+         
+     }
+        if(internalStorage[position] == nullptr)
+        {
+            return position;
+        }
+    }
     return -1;
 }
 template <class Type>
@@ -126,7 +140,7 @@ void Hashtable<Type> :: resize()
          }
          else
          {
-             long updatedPosition = handleCollision(temp, position);
+             long updatedPosition = handleCollision( position);
              if (updatedPosition != -1)
              {
                  tempStorage[updatedPosition]= temp;
@@ -152,7 +166,7 @@ void Hashtable<Type> :: insert(Type value)
     }
     else
     {
-        long updatedPosition = handleCollision(temp, index);
+        long updatedPosition = handleCollision( index);
         if (updatedPosition != -1)
         {
             internal[updatedPosition]= temp;
