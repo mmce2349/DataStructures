@@ -105,7 +105,7 @@ long Hashtable<Type>:: handleCollision( long currentPosition)
 template <class Type>
 long Hashtable<Type> :: getSize()
 {
-    return -1;
+    return this->size;
 }
 template <class Type>
 long Hashtable<Type> :: getNextPrime()
