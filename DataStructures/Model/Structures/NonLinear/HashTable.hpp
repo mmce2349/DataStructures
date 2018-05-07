@@ -11,6 +11,7 @@
 
 #include "../Nodes/HashNode.hpp"
 #include <cmath>
+#include <assert.h>
 
 template <class type>
 class Hashtable
@@ -31,6 +32,8 @@ public:
     
     void insert(Type data);
     long getSize();
+    HashNode<Type> * get(long index);
+    bool contains(HashNode<Type> * value);
 
     
 };
