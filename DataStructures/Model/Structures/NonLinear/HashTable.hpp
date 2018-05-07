@@ -37,7 +37,21 @@ public:
 
     
 };
-
+template <class Type>
+HashNode<Type> * Hashtable<Type> :: get(long index)
+{
+    assert(index < capacity);
+    return internalStorage[index];
+}
+template <class Type>
+bool Hashtable<Type> :: contains(HashNode<Type> * value)
+{
+    if(internalStorage[findPosition(value)] -> getData() == value->getData())
+    {
+        return true;
+    }
+    return false;
+}
 template<class Type>
 Hashtable<Type> :: Hashtable()
 {
