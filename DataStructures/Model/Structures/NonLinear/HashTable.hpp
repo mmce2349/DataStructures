@@ -50,6 +50,11 @@ bool Hashtable<Type> :: contains(HashNode<Type> * value)
     {
         return true;
     }
+    long other = handleCollision(findPosition(value));
+    if(internalStorage[other] -> getData() == value -> getData()
+       {
+           return true;
+       }
     return false;
 }
 template<class Type>
