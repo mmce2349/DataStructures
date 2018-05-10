@@ -18,8 +18,9 @@ void Controller :: start()
     
 //    SortingTester my;
 //    my.testSorts();
-    BinaryTreeTester tree;
-    tree.doTreeStuff();
+   // BinaryTreeTester tree;
+    //tree.doTreeStuff();
+    myTest.testLinkedList();
 }
 
 void Controller :: findMaxandMin()

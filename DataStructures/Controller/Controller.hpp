@@ -18,6 +18,7 @@
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/SortingTester.hpp"
 #include "../Testers/BinaryTreeTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
 
 
 using namespace std;
